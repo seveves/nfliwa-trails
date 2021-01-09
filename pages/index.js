@@ -1,65 +1,67 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import { renderMetaTags } from 'react-datocms';
+import { TRAILS_QUERY } from '../queries/trails';
+import { request } from '../lib/datocms'
 
-export default function Home() {
+import styles from '../styles/Home.module.css';
+import TrailState from '../components/TrailState';
+
+export async function getStaticProps() {
+  const data = await request({
+    query: TRAILS_QUERY,
+  });
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default function Home({ data }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>NaturFreunde Lichtenwald - Trails</title>
         <link rel="icon" href="/favicon.ico" />
+        {renderMetaTags(data.trail.seo.concat(data.site.favicon))}
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          NaturFreunde OG Plochingen - Reichenbach - Lichtenwald
         </p>
+        <h1 className={styles.title}>Trails</h1>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          {data.allTrails.map((trail) => (
+            <Link href={`/trails/${trail.id}`} key={trail.id}>
+              <a className={styles.card}>
+                <h3>{trail.name} <img src="/arrow-right-short.svg" alt="Open Trail Details" /></h3>
+                <p>{trail.summary}</p>
+                <TrailState state={trail.state} />
+              </a>
+            </Link>
+          ))}
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <h4>Trail States</h4>
+        <div className={styles.state}>
+          <div className={styles.badge + ' ' + styles.ok}></div>
+          <p>Go ride and have fun, Everything's fine!</p>
+        </div>
+        <div className={styles.state}>
+          <div className={styles.badge + ' ' + styles.bc}></div>
+          <p>Ride careful. There is something wrong with the trail (for example branch on trail)</p>
+        </div>
+        <div className={styles.state}>
+          <div className={styles.badge + ' ' + styles.closed}></div>
+          <p>We are sorry but this trail is currently closed.</p>
+        </div>
       </footer>
     </div>
-  )
+  );
 }

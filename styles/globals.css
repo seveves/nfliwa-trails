@@ -1,9 +1,21 @@
+:root {
+  --bg: #eaeaea;
+  --yellow: #f0d117;
+  --red: #d7261e;
+  --blue: #3d6c8a;
+  --green: #629d4d;
+  --brown: #b2341d;
+  --black: #333333;
+  --grey: #cccccc;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg);
 }
 
 a {
@@ -13,4 +25,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+dl dt {
+  font-weight: bold;
 }

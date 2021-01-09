@@ -1,0 +1,23 @@
+.badge {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: monospace;
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.ok {
+  background-color: var(--green);
+}
+
+.bc {
+  background-color: var(--yellow);
+}
+
+.closed {
+  background-color: var(--red);
+}
