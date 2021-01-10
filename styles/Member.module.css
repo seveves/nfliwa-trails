@@ -1,0 +1,30 @@
+.member {
+}
+
+.member h3 {
+}
+
+.member h3 span {
+  display: inline-block;
+}
+
+.cardimg {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.member .cardheader .cardimg img {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 5px;
+}
+
+.member h3 picture {
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+}

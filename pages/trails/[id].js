@@ -5,6 +5,7 @@ import { TRAIL_QUERY } from '../../queries/trail';
 import { request } from '../../lib/datocms';
 
 import styles from '../../styles/Home.module.css';
+import Navigation from '../../components/Navigation';
 
 export async function getServerSideProps(context) {
   const data = await request({
@@ -21,22 +22,25 @@ export async function getServerSideProps(context) {
 
 export default function Trail({ data }) {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>NaturFreunde Lichtenwald - Trails</title>
-        {renderMetaTags(data.trail.seo.concat(data.site.favicon))}
+        {renderMetaTags(data.site.favicon)}
       </Head>
-
-      <main className={styles.main}>
-        <p className={styles.description}>
-          NaturFreunde OG Plochingen - Reichenbach - Lichtenwald
-        </p>
+      <main className="main">
+        <Navigation />
         <Link href="/">
-          <a alt="trails overview">
-            <h1 className={styles.title}>Trails</h1>
+          <a>
+            <h2>
+              <img
+                src="/arrow-right-short.svg"
+                alt="Back"
+                className="rotate-180"
+              />{' '}
+              {data.trail.name}{' '}
+            </h2>
           </a>
         </Link>
-        <h2>{data.trail.name}</h2>
         <div className={styles.problem}>
           <p>
             Dir ist auf diesem Trail ein Problem aufgefallen? Dann melde es uns!
@@ -54,13 +58,26 @@ export default function Trail({ data }) {
         </div>
         <dl>
           <dt>Beschreibung</dt>
-          <dd><p>{data.trail.description}</p></dd>
+          <dd>
+            <p>{data.trail.description}</p>
+          </dd>
           <dt>GPX-Track</dt>
           <dd>{data.trail.track || '-'}</dd>
           <dt>Strava Segment</dt>
           <dd>{data.trail.segment || '-'}</dd>
         </dl>
       </main>
+      <footer>
+        <div className="impressum">
+          <a
+            href="http://nfliwa.herokuapp.com/client/static/impressum"
+            alt="Impressum"
+            target="_blank"
+          >
+            Impressum
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

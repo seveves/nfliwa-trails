@@ -1,0 +1,66 @@
+.header {
+}
+
+.header h1 {
+  padding-top: 2rem;
+  margin: 0;
+  letter-spacing: 10px;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+  opacity: 0.66;
+}
+
+.header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  padding-bottom: 2rem;
+  opacity: 0.45;
+}
+
+.navbar {
+  display: flex;
+  margin: auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--grey);
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-right: 1rem;
+  border-radius: 4px;
+  opacity: 0.66;
+}
+
+.navbar ul li a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  color: var(--black);
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.navbar ul li:not(.active) a:hover {
+  border: 1px solid var(--grey);
+}
+
+.navbar ul li.active {
+  opacity: 1;
+  background-color: var(--grey);
+}

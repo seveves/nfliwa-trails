@@ -7,13 +7,6 @@ export const TRAILS_QUERY = `
         tag
       }
     }
-    trail {
-      seo: _seoMetaTags {
-        attributes
-        content
-        tag
-      }
-    }
     allTrails {
       id
       name

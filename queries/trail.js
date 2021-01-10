@@ -8,11 +8,6 @@ query TrailPage($id: ItemId) {
     }
   }
   trail(filter: {id: {eq: $id}}) {
-    seo: _seoMetaTags {
-      attributes
-      content
-      tag
-    }
     id
     description
     name
