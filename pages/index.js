@@ -50,23 +50,43 @@ export default function Home({ data }) {
           ))}
         </div>
       </main>
-
       <footer className="footer">
-        <h4>Trail States</h4>
+        <h4>Trail-Öffnungszeiten</h4>
+        <div className={styles.opening}>
+          <p>Diese Öffnungszeiten sind mit Waldbesitzer und Forst abgestimmt.<br/>Bitte unterstützt uns und haltet euch an diese Zeiten!</p>
+          <dl>
+            <dt>Januar/Februar</dt>
+            <dd>9:00 Uhr bis 16:30 Uhr</dd>
+            <dt>März</dt>
+            <dd>9:00 Uhr bis 17:00 Uhr</dd>
+            <dt>April</dt>
+            <dd>8:00 Uhr bis 18:30 Uhr</dd>
+            <dt>Mai</dt>
+            <dd>8:00 Uhr bis 19:30 Uhr</dd>
+            <dt>Juni/Juli</dt>
+            <dd>8:00 Uhr bis 21:00 Uhr</dd>
+            <dt>August</dt>
+            <dd>8:00 Uhr bis 20:30 Uhr</dd>
+            <dt>September</dt>
+            <dd>8:00 Uhr bis 19:30 Uhr</dd>
+            <dt>Oktober</dt>
+            <dd>8:00 Uhr bis 19:00 Uhr</dd>
+            <dt>November/Dezember</dt>
+            <dd>8:00 Uhr bis 16:30 Uhr</dd>
+          </dl>
+        </div>
+        <h4>Trail-Status</h4>
         <div className={styles.state}>
           <div className={styles.badge + ' ' + styles.ok}></div>
-          <p>Go ride and have fun, Everything's fine!</p>
+          <p>Alles in Ordnung. Viel Spaß beim Biken!</p>
         </div>
         <div className={styles.state}>
           <div className={styles.badge + ' ' + styles.bc}></div>
-          <p>
-            Ride careful. There is something wrong with the trail (for example
-            branch on trail)
-          </p>
+          <p>Fahre vorsichtig! Es wurde ein Problem mit dem Trail gemeldet. Wir kümmern uns schnellstmöglich darum!</p>
         </div>
         <div className={styles.state}>
           <div className={styles.badge + ' ' + styles.closed}></div>
-          <p>We are sorry but this trail is currently closed.</p>
+          <p>Dieser Trail ist aktuell geschlossen. Bitte unterstütze uns und befahre den Trail nicht!</p>
         </div>
         <div className="impressum">
           <a

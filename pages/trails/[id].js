@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { renderMetaTags } from 'react-datocms';
+import { Image, renderMetaTags } from 'react-datocms';
 import { TRAIL_QUERY } from '../../queries/trail';
 import { request } from '../../lib/datocms';
 
@@ -60,6 +60,16 @@ export default function Trail({ data }) {
           <dt>Beschreibung</dt>
           <dd>
             <p>{data.trail.description}</p>
+          </dd>
+          <dt>Bilder</dt>
+          <dd>
+            <div class={styles.trailImages}>
+              {data.trail.images.map((image) => (
+                <div class={styles.trailImg}>
+                  <Image data={image.responsiveImage} />
+                </div>
+              ))}
+            </div>
           </dd>
           <dt>GPX-Track</dt>
           <dd>{data.trail.track || '-'}</dd>

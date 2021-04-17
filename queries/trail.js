@@ -12,6 +12,20 @@ query TrailPage($id: ItemId) {
     description
     name
     segment
+    images {
+      responsiveImage(imgixParams: { fit: crop, w: 300, h: 300, auto: format }) {
+        srcSet
+        webpSrcSet
+        sizes
+        src
+        width
+        height
+        aspectRatio
+        alt
+        title
+        base64
+      }
+    }
     state
     summary
     track

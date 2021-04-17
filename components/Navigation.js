@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <header className={styles.header}>
       <h1>Trails</h1>
-      <h2>NaturFreunde e.V.</h2>
+      <h2>NaturFreunde Deutschlands e.V.</h2>
       <h3>Ortsgruppe Plochingen - Reichenbach - Lichtenwald</h3>
       <nav className={styles.navbar}>
         <ul>
@@ -21,6 +21,11 @@ export default function Navigation() {
           >
             <Link href="/">
               <a alt="trails">Trails</a>
+            </Link>
+          </li>
+          <li className={router.pathname === '/project' ? styles.active : null}>
+            <Link href="/project">
+              <a alt="project">Projekt</a>
             </Link>
           </li>
           <li className={router.pathname === '/team' ? styles.active : null}>

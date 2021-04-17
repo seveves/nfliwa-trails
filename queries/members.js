@@ -7,7 +7,7 @@ export const MEMBERS_QUERY = `
         tag
       }
     }
-    allMembers {
+    allMembers(orderBy: name_ASC) {
       id
       name
       description
