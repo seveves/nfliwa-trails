@@ -31,19 +31,13 @@ export default function TrailState({ state }) {
     return <div className={styles.badge + ' ' + styles.closed}>Heute bereits geschlosssen!</div>
   }
 
-  let _state = null;
   switch (state) {
     case 0:
-      _state = { text: `Ok`, class: 'ok' };
-      break;
+      return <div className={styles.badge + ' ' + styles.ok}>Ok</div>
     case 1:
-      _state = { text: 'Vorsicht!', class: 'bc' };
-      break;
-    default:
+      return <div className={styles.badge + ' ' + styles.bc}>Vorsicht!</div>
     case 2:
-      _state = { text: 'Gesperrt!', class: 'closed' };
-      break;
+    default:
+      return <div className={styles.badge + ' ' + styles.closed}>Gesperrt!</div>
   }
-
-  return <div className={styles.badge + ' ' + styles[_state.class]}>{_state.text}</div>;
 }
