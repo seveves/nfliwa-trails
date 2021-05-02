@@ -16,7 +16,7 @@ const OPENING_HOURS = [
   [9, [16, 30]], // November
   [9, [16, 30]], // December
 ]
-export default function TrailState({ state }) {
+export default function TrailState({ state, stateDescription }) {
   const month = new Date().getMonth();
   const [start, [end, endMinutes]] = OPENING_HOURS[month];
   const hours = new Date().getHours();
@@ -24,20 +24,20 @@ export default function TrailState({ state }) {
 
   if (hours < start) {
     const opensIn = formatDuration({ minutes: ((start - hours) * 60) - minutes });
-    return <div className={styles.badge + ' ' + styles.closed}>{`Geschlossen! Öffnet in: ${opensIn}`}</div>
+    return <div className={styles.badge} style={{ backgroundColor: 'var(--red)' }}>{`Geschlossen! Öffnet in: ${opensIn}`}</div>
   }
 
   if (hours > end || (hours === end && minutes > endMinutes)) {
-    return <div className={styles.badge + ' ' + styles.closed}>Heute bereits geschlosssen!</div>
+    return <div className={styles.badge} style={{ backgroundColor: 'var(--red)' }}>Heute bereits geschlosssen!</div>
   }
 
   switch (state) {
     case 0:
-      return <div className={styles.badge + ' ' + styles.ok}>Ok</div>
+      return <div className={styles.badge} style={{ backgroundColor: 'var(--green)' }}>Ok</div>
     case 1:
-      return <div className={styles.badge + ' ' + styles.bc}>Vorsicht!</div>
+      return <div className={styles.badge} style={{ backgroundColor: 'var(--yellow)' }}>Vorsicht! {stateDescription}</div>
     case 2:
     default:
-      return <div className={styles.badge + ' ' + styles.closed}>Gesperrt!</div>
+      return <div className={styles.badge} style={{ backgroundColor: 'var(--red)' }}>Gesperrt! {stateDescription}</div>
   }
 }

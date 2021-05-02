@@ -6,6 +6,7 @@ import { request } from '../../lib/datocms';
 
 import styles from '../../styles/Home.module.css';
 import Navigation from '../../components/Navigation';
+import TrailState from '../../components/TrailState';
 
 export async function getServerSideProps(context) {
   const data = await request({
@@ -41,6 +42,11 @@ export default function Trail({ data }) {
             </h2>
           </a>
         </Link>
+        {data.trail.statedescription && (
+          <div className={styles.statedesc}>
+            <TrailState state={data.trail.state} stateDescription={data.trail.statedescription} />
+          </div>
+        )}
         <div className={styles.problem}>
           <p>
             Dir ist auf diesem Trail ein Problem aufgefallen? Dann melde es uns!

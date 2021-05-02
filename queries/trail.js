@@ -27,6 +27,7 @@ query TrailPage($id: ItemId) {
       }
     }
     state
+    statedescription
     summary
     track
   }

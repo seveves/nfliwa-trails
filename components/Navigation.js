@@ -8,8 +8,8 @@ export default function Navigation() {
   return (
     <header className={styles.header}>
       <h1>Trails</h1>
-      <h2>NaturFreunde Deutschlands e.V.</h2>
-      <h3>Ortsgruppe Plochingen - Reichenbach - Lichtenwald</h3>
+      <h2>NaturFreunde Deutschlands</h2>
+      <h3>Ortsgruppe Plochingen - Reichenbach - Lichtenwald e.V.</h3>
       <nav className={styles.navbar}>
         <ul>
           <li
