@@ -30,7 +30,7 @@ export default function Team({ data }) {
         <Navigation />
         <div className="grid">
           {data.allMembers.map((member) => (
-            <div class="col">
+            <div className="col">
               <div className={'card ' + styles.member}>
                 <div className={styles.cardheader}>
                   <div className={styles.cardimg}>

@@ -7,9 +7,14 @@ export default function Navigation() {
 
   return (
     <header className={styles.header}>
-      <h1>Trails</h1>
-      <h2>NaturFreunde Deutschlands</h2>
-      <h3>Ortsgruppe Plochingen - Reichenbach - Lichtenwald e.V.</h3>
+      <div className={styles.top}>
+        <div>
+          <h1>Trails</h1>
+          <h2>NaturFreunde Deutschlands</h2>
+          <h3>Ortsgruppe Plochingen - Reichenbach - Lichtenwald e.V.</h3>
+        </div>
+        <img src="/naturfreunde_logo.gif" alt="NaturFreunde Logo" />
+      </div>
       <nav className={styles.navbar}>
         <ul>
           <li
@@ -21,6 +26,11 @@ export default function Navigation() {
           >
             <Link href="/">
               <a alt="trails">Trails</a>
+            </Link>
+          </li>
+          <li className={router.pathname === '/rules' ? styles.active : null}>
+            <Link href="/rules">
+              <a alt="rules">Wegeregeln</a>
             </Link>
           </li>
           <li className={router.pathname === '/project' ? styles.active : null}>

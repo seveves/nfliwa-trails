@@ -1,4 +1,12 @@
-.header {
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.top img {
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
 }
 
 .header h1 {
@@ -57,10 +65,10 @@
 }
 
 .navbar ul li:not(.active) a:hover {
-  border: 1px solid var(--grey);
+  border: 1px solid var(--green);
 }
 
 .navbar ul li.active {
   opacity: 1;
-  background-color: var(--grey);
+  background-color: var(--green);
 }

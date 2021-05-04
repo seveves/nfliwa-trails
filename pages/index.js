@@ -32,7 +32,7 @@ export default function Home({ data }) {
         <Navigation />
         <div className="grid">
           {data.allTrails.map((trail) => (
-            <div class="col">
+            <div className="col" key={trail.id}>
               <Link href={`/trails/${trail.id}`} key={trail.id}>
                 <a className="card">
                   <h3>
