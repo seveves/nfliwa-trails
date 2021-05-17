@@ -45,7 +45,7 @@ export default function Project() {
       <footer>
         <div className="impressum">
           <a
-            href="http://nfliwa.herokuapp.com/client/static/impressum"
+            href="https://www.naturfreunde-lichtenwald.de/impressum"
             alt="Impressum"
             target="_blank"
           >
