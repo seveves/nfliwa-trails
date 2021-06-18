@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 import TrailState from '../components/TrailState';
 import Navigation from '../components/Navigation';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await request({
     query: TRAILS_QUERY,
   });
