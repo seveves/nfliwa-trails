@@ -41,6 +41,16 @@ export default function Project() {
             Tour verknüpft werden können.
           </p>
         </div>
+        <iframe
+          src="https://www.betterplace-widget.org/projects/102972?l=de"
+          height="320"
+          style={{ border: 0, padding: 0, margin: 'auto' }}
+        >
+          Informieren und spenden: &lt;a
+          href=&#39;https://www.betterplace.org/de/projects/102972-mountainbike-trails-in-plochingen-reichenbach-und-lichtenwald&#39;
+          target=&#39;_blank&#39;&gt;„Mountainbike-Trails in Plochingen,
+          Reichenbach und Lichtenwald“&lt;/a&gt; auf betterplace.org öffnen.
+        </iframe>
       </main>
       <footer>
         <div className="impressum">
