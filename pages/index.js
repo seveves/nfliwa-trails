@@ -33,18 +33,17 @@ export default function Home({ data }) {
         <div className="grid">
           {data.allTrails.map((trail) => (
             <div className="col" key={trail.id}>
-              <Link href={`/trails/${trail.id}`} key={trail.id}>
-                <a className="card">
-                  <h3>
-                    {trail.name}{' '}
-                    <img
-                      src="/arrow-right-short.svg"
-                      alt="Open Trail Details"
-                    />
-                  </h3>
-                  <p>{trail.summary}</p>
-                  <TrailState state={trail.state} />
-                </a>
+              <Link
+                href={`/trails/${trail.id}`}
+                key={trail.id}
+                className="card"
+              >
+                <h3>
+                  {trail.name}{' '}
+                  <img src="/arrow-right-short.svg" alt="Open Trail Details" />
+                </h3>
+                <p>{trail.summary}</p>
+                <TrailState state={trail.state} />
               </Link>
             </div>
           ))}
@@ -53,7 +52,11 @@ export default function Home({ data }) {
       <footer className="footer">
         <h4>Trail-Öffnungszeiten</h4>
         <div className={styles.opening}>
-          <p>Diese Öffnungszeiten sind mit Waldbesitzer und Forst abgestimmt.<br/>Bitte unterstützt uns und haltet euch an diese Zeiten!</p>
+          <p>
+            Diese Öffnungszeiten sind mit Waldbesitzer und Forst abgestimmt.
+            <br />
+            Bitte unterstützt uns und haltet euch an diese Zeiten!
+          </p>
           <dl>
             <dt>Januar/Februar</dt>
             <dd>9:00 Uhr bis 16:30 Uhr</dd>
@@ -82,11 +85,17 @@ export default function Home({ data }) {
         </div>
         <div className={styles.state}>
           <div className={styles.badge + ' ' + styles.bc}></div>
-          <p>Fahre vorsichtig! Es wurde ein Problem mit dem Trail gemeldet. Wir kümmern uns schnellstmöglich darum!</p>
+          <p>
+            Fahre vorsichtig! Es wurde ein Problem mit dem Trail gemeldet. Wir
+            kümmern uns schnellstmöglich darum!
+          </p>
         </div>
         <div className={styles.state}>
           <div className={styles.badge + ' ' + styles.closed}></div>
-          <p>Dieser Trail ist aktuell geschlossen. Bitte unterstütze uns und befahre den Trail nicht!</p>
+          <p>
+            Dieser Trail ist aktuell geschlossen. Bitte unterstütze uns und
+            befahre den Trail nicht!
+          </p>
         </div>
         <div className="impressum">
           <a

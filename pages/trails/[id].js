@@ -31,20 +31,21 @@ export default function Trail({ data }) {
       <main className="main">
         <Navigation />
         <Link href="/">
-          <a>
-            <h2>
-              <img
-                src="/arrow-right-short.svg"
-                alt="Back"
-                className="rotate-180"
-              />{' '}
-              {data.trail.name}{' '}
-            </h2>
-          </a>
+          <h2>
+            <img
+              src="/arrow-right-short.svg"
+              alt="Back"
+              className="rotate-180"
+            />{' '}
+            {data.trail.name}{' '}
+          </h2>
         </Link>
         {data.trail.statedescription && (
           <div className={styles.statedesc}>
-            <TrailState state={data.trail.state} stateDescription={data.trail.statedescription} />
+            <TrailState
+              state={data.trail.state}
+              stateDescription={data.trail.statedescription}
+            />
           </div>
         )}
         <div className={styles.problem}>

@@ -24,24 +24,16 @@ export default function Navigation() {
                 : null
             }
           >
-            <Link href="/">
-              <a alt="trails">Trails</a>
-            </Link>
+            <Link href="/" alt="trails">Trails</Link>
           </li>
           <li className={router.pathname === '/rules' ? styles.active : null}>
-            <Link href="/rules">
-              <a alt="rules">Wegeregeln</a>
-            </Link>
+            <Link href="/rules" alt="rules">Wegeregeln</Link>
           </li>
           <li className={router.pathname === '/project' ? styles.active : null}>
-            <Link href="/project">
-              <a alt="project">Projekt</a>
-            </Link>
+            <Link href="/project" alt="project">Projekt</Link>
           </li>
           <li className={router.pathname === '/team' ? styles.active : null}>
-            <Link href="/team">
-              <a alt="team">Team</a>
-            </Link>
+            <Link href="/team" alt="team">Team</Link>
           </li>
         </ul>
       </nav>
