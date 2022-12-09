@@ -18,5 +18,8 @@
     "react-datocms": "4.0.7",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
