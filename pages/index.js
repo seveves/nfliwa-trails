@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { renderMetaTags } from 'react-datocms';
 import { TRAILS_QUERY } from '../queries/trails';
 import { request } from '../lib/datocms';
+import dynamic from 'next/dynamic'
 
 import styles from '../styles/Home.module.css';
 import TrailState from '../components/TrailState';
@@ -19,6 +20,11 @@ export async function getServerSideProps() {
     },
   };
 }
+
+const TrailMap = dynamic(
+    () => import('../components/TrailMap'),
+    { ssr: false }
+  );
 
 export default function Home({ data }) {
   return (
@@ -48,6 +54,7 @@ export default function Home({ data }) {
             </div>
           ))}
         </div>
+        <TrailMap />
       </main>
       <footer className="footer">
         <h4>Trail-Öffnungszeiten</h4>

@@ -2,17 +2,18 @@
   display: inline-block;
 }
 
-.cardimg {
-  border-radius: 5px;
-  border: 1px solid black;
+.cardheader {
+  display: flex;
+  align-items: flex-start;
 }
 
-.member .cardheader .cardimg img {
-  width: 100%;
-  min-height: 150px;
-  object-fit: cover;
-  object-position: center center;
+.cardimg {
   border-radius: 5px;
+  position: relative;
+  margin-right: 24px;
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
 .member h3 picture {

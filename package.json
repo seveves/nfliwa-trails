@@ -12,9 +12,11 @@
     "eslint-config-next": "^13.0.6",
     "graphql": "16.6.0",
     "graphql-request": "5.0.0",
+    "leaflet": "^1.9.3",
     "next": "^13.0.6",
     "react": "^18.2.0",
     "react-datocms": "4.0.7",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.0"
   }
 }

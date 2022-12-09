@@ -32,6 +32,7 @@
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--grey);
@@ -39,6 +40,7 @@
 
 .navbar ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
