@@ -148,3 +148,7 @@ a.card:active {
 .actionLink:hover {
   opacity: 0.7;
 }
+
+.flyer {
+  width: 100%;
+}

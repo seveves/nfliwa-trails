@@ -54,7 +54,7 @@ export default function Events() {
           </ul>
 
           <div>
-            <img src="/saisonauftakt.jpg" alt="MTB Saisonauftakt 2023 Flyer" />
+            <img className="flyer" src="/saisonauftakt.jpg" alt="MTB Saisonauftakt 2023 Flyer" />
           </div>
           <div>
             <h3>
@@ -105,7 +105,7 @@ export default function Events() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.8880375864974!2d9.479428531227304!3d48.72807910553409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799bc0148ffd093%3A0x1bfc609f5d4b0dd0!2sNaturFreunde%20Lichtenwald%20(Schurwaldhaus)!5e0!3m2!1sde!2sde!4v1678475724857!5m2!1sde!2sde"
               width="600"
               height="450"
-              style={{ border: 0 }}
+              style={{ border: 0, width: '100%' }}
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
