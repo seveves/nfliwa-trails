@@ -5,7 +5,7 @@ export default function Events() {
   return (
     <div className="container">
       <Head>
-        <title>NaturFreunde Lichtenwald - MTB Saisonauftak 2023</title>
+        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2023</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
