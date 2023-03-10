@@ -74,3 +74,34 @@
   opacity: 1;
   background-color: var(--green);
 }
+
+.eventLink, .activeEventLink {
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.eventLink a, .activeEventLink a {
+  display: inline-block;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--black);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.eventLink a:hover, .activeEventLink a:hover {
+  background-color: var(--green);
+}
+
+
+.activeEventLink a {
+  background-color: var(--green);
+}
+
+.grid {
+  display: flex;
+}
