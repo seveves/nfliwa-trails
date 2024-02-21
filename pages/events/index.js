@@ -5,16 +5,15 @@ export default function Events() {
   return (
     <div className="container">
       <Head>
-        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2023</title>
+        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2024</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
         <Navigation />
         <div>
-          <h1>MTB Saisonauftakt 2023</h1>
+          <h1>MTB Saisonauftakt 2024</h1>
           <p>
-            Wir laden euch herzlichst zu unserem Mountainbike Saisonauftakt 2023
-            ein.<br/>
+            Unser Mountainbike Saisonauftakt geht 2024 nach dem letztjährigen erfolgreichen und erlebnisreichen Debüt in die zweite Runde!<br/>
             Direkt bei unserem wunderschön gelegenen NaturFreundehaus wollen wir mit euch den Start in die Saison feiern.<br/><br/>
             Auf dieser Seite erfahrt ihr alle notwendigen Infos und wir werden sie stes aktualisieren.<b/>
             Bei Fragen kontaktiert uns gerne über <a className="actionLink" href="mailto:trails@naturfreunde-lichtenwald.de">trails@naturfreunde-lichtenwald.de</a>.
@@ -33,7 +32,7 @@ export default function Events() {
           <ul>
             <li>
               <a className="actionLink" href="#kaffee">
-                Drinks, Kaffee und Kuchen
+                Getränke, Gegrilltes, Kaffee & Kuchen
               </a>
             </li>
             <li>
@@ -54,16 +53,18 @@ export default function Events() {
           </ul>
 
           <div>
-            <img className="flyer" src="/saisonauftakt.jpg" alt="MTB Saisonauftakt 2023 Flyer" />
+            <img className="flyer" src="/saisonauftakt.jpg" alt="MTB Saisonauftakt 2024 Flyer" />
           </div>
           <div>
             <h3>
               <a id="kaffee" href="#kaffee">
-                Drinks, Kaffee und Kuchen
+              Getränke, Gegrilltes, Kaffee & Kuchen
               </a>
             </h3>
             <p>
-              Wir bieten gekühlte Getränke, Kaffee und Kuchen.<b/>
+              Wir bieten gekühlte Getränke, Kaffee und Kuchen.<br/>
+              Des Weiteren werden wir ab mittags, anders als im Vorjahr, auch Gegrilltes aus unserer Grillhütte anbieten.<br/>
+              Neben Rote, Bratwurst und Steaks wird es auch vegane Angebote geben.<br/>
               Wer darüberhinaus großen Hunger verspürt, dem können wir nur wärmstens eine Einkehr bei unserem Pächter Haug's Schurwaldbesen empfehlen. 
             </p>
 
@@ -73,10 +74,11 @@ export default function Events() {
               </a>
             </h3>
             <p>
-              Jeweils um 11 Uhr und 14 Uhr laden wir euch zu unseren gemeinsamen Hausrunde ein.<br/>
+              Jeweils um 10:30 Uhr und 13:30 Uhr laden wir euch zu unseren gemeinsamen Hausrunde ein.<br/>
               Wir passen diese Ausfahrt gerne auf die Anzahl oder Könnensstufe der Teilnehmer an.<br/>
               Ziel ist es einmal all unsere Trails zu fahren und dann noch den Ebertrail unserer Freunde des RVI Büchenbronn zu besuchen.<br/>
-              Wir rechnen mit ca. 500hm und 30km.
+              Wir rechnen mit ca. 500hm und 30km.<br/>
+              Falls wir auch genug Kinder zusammen bekommen, werden wir auch speziell für die Kleinen eine Runde anbieten. Liebe Eltern, denkt an die Abschleppseile.
             </p>
 
             <h3>
@@ -85,8 +87,7 @@ export default function Events() {
               </a>
             </h3>
             <p>
-              Als Highlight stellt unser Partner{' '}
-              <a href="https://www.bikesnboards.de/info/esslingen" className="actionLink">Bikes and Boards - Esslingen</a> Testbikes
+              Als Highlight stellt unser Partner <a href="https://www.bikesnboards.de/info/esslingen" className="actionLink">Bikes and Boards - Esslingen</a> Testbikes
               verschiedener Marken zur Verfügung! Falls ihr Interesse habt,
               vergesst euren Ausweis nicht und bringt einen Helm mit.
             </p>
