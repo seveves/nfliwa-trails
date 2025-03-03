@@ -68,10 +68,28 @@ const yellowMarkerIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
+const goldMarkerIcon = new L.Icon({
+  iconUrl: 'marker-icon-gold.png',
+  shadowUrl: 'marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+const orangeMarkerIcon = new L.Icon({
+  iconUrl: 'marker-icon-orange.png',
+  shadowUrl: 'marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
 export default function LeafletTrailMap() {
   return (
     <MapContainer
-      center={[48.726733, 9.4874942]}
+      center={[48.72661, 9.48137]}
       zoom={15}
       scrollWheelZoom={false}
       style={{ height: '350px', width: '100%' }}
@@ -85,6 +103,24 @@ export default function LeafletTrailMap() {
           <h2>Naddefatz</h2>
           <p>Unser Haus-Trail</p>
           <Link href="/trails/14796212" alt="Naddefatz Trail">
+            Alle Trailinfos
+          </Link>
+        </Popup>
+      </Marker>
+      <Marker position={[48.729123, 9.482666]} icon={orangeMarkerIcon}>
+        <Popup>
+          <h2>Wildraub</h2>
+          <p>Flowiger Zubgringer für Brünnele und Förstermord</p>
+          <Link href="/trails/14796212" alt="Naddefatz Trail">
+            Alle Trailinfos
+          </Link>
+        </Popup>
+      </Marker>
+      <Marker position={[48.728881, 9.484211]} icon={greenMarkerIcon}>
+        <Popup>
+          <h2>Brünnele</h2>
+          <p>Kurven, Flow und ein paar Sprünge</p>
+          <Link href="/trails/14796212" alt="Brünnele Trail">
             Alle Trailinfos
           </Link>
         </Popup>
@@ -134,6 +170,24 @@ export default function LeafletTrailMap() {
           </Link>
         </Popup>
       </Marker>
+      <Marker position={[48.725602, 9.478047]} icon={goldMarkerIcon}>
+        <Popup>
+          <h2>Reichenbach I</h2>
+          <p>Neu in 2025!</p>
+          <Link href="/trails/122407487" alt="Reichenbach I">
+            Alle Trailinfos
+          </Link>
+        </Popup>
+      </Marker>
+      <Marker position={[48.722502, 9.469947]} icon={goldMarkerIcon}>
+        <Popup>
+          <h2>Reichenbach II</h2>
+          <p>Neu in 2025!</p>
+          <Link href="/trails/122407487" alt="Reichenbach II">
+            Alle Trailinfos
+          </Link>
+        </Popup>
+      </Marker>
       <Marker position={[48.72778, 9.52868]} icon={yellowMarkerIcon}>
         <Popup>
           <h2>Ebertrail</h2>
@@ -143,5 +197,3 @@ export default function LeafletTrailMap() {
     </MapContainer>
   );
 }
-
-8/48.72778/9.52868

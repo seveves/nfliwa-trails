@@ -5,18 +5,18 @@ export default function Events() {
   return (
     <div className="container">
       <Head>
-        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2024</title>
+        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2025</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
         <Navigation />
         <div>
-          <h1>MTB Saisonauftakt 2024</h1>
+          <h1>MTB Saisonauftakt 2025</h1>
           <p>
-            Unser Mountainbike Saisonauftakt geht 2024 nach dem letztjährigen erfolgreichen und erlebnisreichen Debüt in die zweite Runde!<br/>
+            Unser Mountainbike Saisonauftakt geht 2025 in die dritte Runde!<br/>
             Direkt bei unserem wunderschön gelegenen NaturFreundehaus wollen wir mit euch den Start in die Saison feiern.<br/><br/>
-            Auf dieser Seite erfahrt ihr alle notwendigen Infos und wir werden sie stes aktualisieren.<b/>
-            Bei Fragen kontaktiert uns gerne über <a className="actionLink" href="mailto:trails@naturfreunde-lichtenwald.de">trails@naturfreunde-lichtenwald.de</a>.
+            Auf dieser Seite erfahrt ihr alle notwendigen Infos und wir werden sie stets aktualisieren.<b/>
+            Bei Fragen kontaktiert uns gerne über <a className="actionLink" href="mailto:trails@naturfreunde-lichtenwald.de">trails@naturfreunde-lichtenwald.de</a> oder schreibt uns auf den sozialen Medien an.
           </p>
           <p>
             
@@ -25,7 +25,8 @@ export default function Events() {
             Unsere Trails bieten für jeden den perfekten Einstieg in den
             Mountainbike-Sport, aber auch versierte Fahrer können bei uns
             definitv Spaß haben.<br/>
-            Unsere Trails sind auch super für Kinder und Jugendliche geeignet. Selbst die ganz kleinen wurden schon mit Laufrädern gesichtet!
+            Unsere Trails sind auch super für Kinder und Jugendliche geeignet.
+            Selbst die ganz kleinen wurden schon mit Laufrädern gesichtet und dieses Jahr legen wir noch extra einen kleinen Parcours an.
           </p>
 
           <h2>Alle Infos in Kürze</h2>
@@ -53,7 +54,7 @@ export default function Events() {
           </ul>
 
           <div>
-            <img className="flyer" src="/saisonauftakt.jpg" alt="MTB Saisonauftakt 2024 Flyer" />
+            <img className="flyer" src="/saisonauftakt2025.jpg" alt="MTB Saisonauftakt 2025 Flyer" />
           </div>
           <div>
             <h3>
@@ -63,8 +64,8 @@ export default function Events() {
             </h3>
             <p>
               Wir bieten gekühlte Getränke, Kaffee und Kuchen.<br/>
-              Des Weiteren werden wir ab mittags, anders als im Vorjahr, auch Gegrilltes aus unserer Grillhütte anbieten.<br/>
-              Neben Rote, Bratwurst und Steaks wird es auch vegane Angebote geben.<br/>
+              Des Weiteren werden wir ab mittags auch wieder Gegrilltes aus unserer Grillhütte anbieten.<br/>
+              Es gibt wieder Rote, Bratwurst und Pommes.<br/>
               Wer darüberhinaus großen Hunger verspürt, dem können wir nur wärmstens eine Einkehr bei unserem Pächter Haug's Schurwaldbesen empfehlen. 
             </p>
 
@@ -74,10 +75,10 @@ export default function Events() {
               </a>
             </h3>
             <p>
-              Jeweils um 10:30 Uhr und 13:30 Uhr laden wir euch zu unseren gemeinsamen Hausrunde ein.<br/>
+              Jeweils um 10:30 Uhr und 14:30 Uhr laden wir euch zu unseren gemeinsamen Hausrunde ein.<br/>
               Wir passen diese Ausfahrt gerne auf die Anzahl oder Könnensstufe der Teilnehmer an.<br/>
-              Ziel ist es einmal all unsere Trails zu fahren und dann noch den Ebertrail unserer Freunde des RVI Büchenbronn zu besuchen.<br/>
-              Wir rechnen mit ca. 500hm und 30km.<br/>
+              Ziel ist es einmal all unsere Trails zu fahren und eventuell noch den Ebertrail unserer Freunde des RVI Büchenbronn zu besuchen.<br/>
+              Wir rechnen für die kleine Runde mit maximal 200hm und 12km und mit ca. 500hm und 30km bei der großen Runde.<br/>
               Falls wir auch genug Kinder zusammen bekommen, werden wir auch speziell für die Kleinen eine Runde anbieten. Liebe Eltern, denkt an die Abschleppseile.
             </p>
 

@@ -1,6 +1,6 @@
 {
   "name": "nfliwa-trails",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,18 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "2.29.3",
-    "eslint-config-next": "^13.0.6",
-    "graphql": "16.6.0",
-    "graphql-request": "5.0.0",
-    "leaflet": "^1.9.3",
-    "next": "^13.0.6",
-    "react": "^18.2.0",
-    "react-datocms": "4.0.7",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.0"
+    "date-fns": "^4.1.0",
+    "eslint-config-next": "^15.2.0",
+    "graphql": "^16.10.0",
+    "graphql-request": "^7.1.2",
+    "leaflet": "^1.9.4",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-datocms": "^7.2.0",
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">= 21"
   }
 }
