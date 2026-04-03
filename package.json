@@ -8,18 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mux/mux-player-react": "^3.11.7",
     "date-fns": "^4.1.0",
-    "eslint-config-next": "^15.2.0",
-    "graphql": "^16.10.0",
-    "graphql-request": "^7.1.2",
+    "eslint-config-next": "^16.2.2",
+    "graphql": "^16.13.2",
+    "graphql-request": "^7.4.0",
     "leaflet": "^1.9.4",
-    "next": "^15.2.0",
-    "react": "^19.0.0",
-    "react-datocms": "^7.2.0",
-    "react-dom": "^19.0.0",
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "react-datocms": "^8.0.2",
+    "react-dom": "^19.2.4",
     "react-leaflet": "^5.0.0"
   },
   "engines": {
-    "node": ">= 21"
+    "node": ">= 24"
   }
 }

@@ -16,7 +16,7 @@ export default function Navigation() {
         <img src="/naturfreunde_logo.gif" alt="NaturFreunde Logo" />
       </div>
       <div className={router.pathname === '/events' ? styles.activeEventLink : styles.eventLink}>
-        <Link href="/events" alt="events">!! MTB Saisonauftakt 05.04.2025 !!</Link>
+        <Link href="/events">!! MTB Saisonauftakt 05.04.2025 !!</Link>
       </div>
       <nav className={styles.navbar}>
         <ul>
@@ -27,16 +27,16 @@ export default function Navigation() {
                 : null
             }
           >
-            <Link href="/" alt="trails">Trails</Link>
+            <Link href="/">Trails</Link>
           </li>
           <li className={router.pathname === '/rules' ? styles.active : null}>
-            <Link href="/rules" alt="rules">Wegeregeln</Link>
+            <Link href="/rules">Wegeregeln</Link>
           </li>
           <li className={router.pathname === '/project' ? styles.active : null}>
-            <Link href="/project" alt="project">Projekt</Link>
+            <Link href="/project">Projekt</Link>
           </li>
           <li className={router.pathname === '/team' ? styles.active : null}>
-            <Link href="/team" alt="team">Team</Link>
+            <Link href="/team">Team</Link>
           </li>
         </ul>
       </nav>

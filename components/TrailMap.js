@@ -1,90 +1,9 @@
 import { TileLayer, MapContainer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
 import Link from 'next/link';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet/dist/images/marker-icon.png';
 import 'leaflet/dist/images/marker-shadow.png';
-
-const greenMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-green.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const redMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-red.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const blueMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-blue.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const violetMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-violet.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const greyMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-grey.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const blackMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-black.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const yellowMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-yellow.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const goldMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-gold.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-const orangeMarkerIcon = new L.Icon({
-  iconUrl: 'marker-icon-orange.png',
-  shadowUrl: 'marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
+import { markerIcons } from '../lib/markerIcons';
 
 export default function LeafletTrailMap() {
   return (
@@ -98,92 +17,92 @@ export default function LeafletTrailMap() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[48.7293, 9.48204]} icon={blueMarkerIcon}>
+      <Marker position={[48.7293, 9.48204]} icon={markerIcons.blue}>
         <Popup>
           <h2>Naddefatz</h2>
           <p>Unser Haus-Trail</p>
-          <Link href="/trails/14796212" alt="Naddefatz Trail">
+          <Link href="/trails/14796212">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.729123, 9.482666]} icon={orangeMarkerIcon}>
+      <Marker position={[48.729123, 9.482666]} icon={markerIcons.orange}>
         <Popup>
           <h2>Wildraub</h2>
           <p>Flowiger Zubgringer für Brünnele und Förstermord</p>
-          <Link href="/trails/14796212" alt="Naddefatz Trail">
+          <Link href="/trails/14796212">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.728881, 9.484211]} icon={greenMarkerIcon}>
+      <Marker position={[48.728881, 9.484211]} icon={markerIcons.green}>
         <Popup>
           <h2>Brünnele</h2>
           <p>Kurven, Flow und ein paar Sprünge</p>
-          <Link href="/trails/14796212" alt="Brünnele Trail">
+          <Link href="/trails/14796212">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.72597, 9.48086]} icon={greenMarkerIcon}>
+      <Marker position={[48.72597, 9.48086]} icon={markerIcons.green}>
         <Popup>
           <h2>The Herbert</h2>
           <p>Uphill zu Mammut und Mooskopf</p>
-          <Link href="/trails/122407488" alt="The Herbert Trail">
+          <Link href="/trails/122407488">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.72450, 9.47954]} icon={redMarkerIcon}>
+      <Marker position={[48.72450, 9.47954]} icon={markerIcons.red}>
         <Popup>
           <h2>Mammut</h2>
           <p>Schnell, Kurven, Wurzeln</p>
-          <Link href="/trails/122407477" alt="Mammut Trail">
+          <Link href="/trails/122407477">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.72473, 9.47916]} icon={violetMarkerIcon}>
+      <Marker position={[48.72473, 9.47916]} icon={markerIcons.violet}>
         <Popup>
           <h2>Mooskopf</h2>
           <p>Fitness-Trail</p>
-          <Link href="/trails/122407465" alt="Mooskopf Trail">
+          <Link href="/trails/122407465">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.72943, 9.48492]} icon={greyMarkerIcon}>
+      <Marker position={[48.72943, 9.48492]} icon={markerIcons.grey}>
         <Popup>
           <h2>Förstermord</h2>
           <p>Nach wahren Begebenheiten</p>
-          <Link href="/trails/122407486" alt="Förstermord Trail">
+          <Link href="/trails/122407486">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.73049, 9.4911]} icon={blackMarkerIcon}>
+      <Marker position={[48.73049, 9.4911]} icon={markerIcons.black}>
         <Popup>
           <h2>Förstertod</h2>
           <p>Nach wahren Begebenheiten</p>
-          <Link href="/trails/122407487" alt="Förstertod Trail">
+          <Link href="/trails/122407487">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.725602, 9.478047]} icon={goldMarkerIcon}>
+      <Marker position={[48.725602, 9.478047]} icon={markerIcons.gold}>
         <Popup>
           <h2>Reichenbach I</h2>
           <p>Neu in 2025!</p>
-          <Link href="/trails/122407487" alt="Reichenbach I">
+          <Link href="/trails/122407487">
             Alle Trailinfos
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.722502, 9.469947]} icon={goldMarkerIcon}>
+      <Marker position={[48.722502, 9.469947]} icon={markerIcons.gold}>
         <Popup>
           <h2>Reichenbach II</h2>
           <p>Neu in 2025!</p>
-          <Link href="/trails/122407487" alt="Reichenbach II">
+          <Link href="/trails/122407487">
             Alle Trailinfos
           </Link>
         </Popup>
