@@ -107,7 +107,7 @@ export default function LeafletTrailMap() {
           </Link>
         </Popup>
       </Marker>
-      <Marker position={[48.72778, 9.52868]} icon={yellowMarkerIcon}>
+      <Marker position={[48.72778, 9.52868]} icon={markerIcons.yellow}>
         <Popup>
           <h2>Ebertrail</h2>
           <p>Dieser Trail kann gut in eine Runde eingebaut werden.</p>
