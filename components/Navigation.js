@@ -16,7 +16,7 @@ export default function Navigation() {
         <img src="/naturfreunde_logo.gif" alt="NaturFreunde Logo" />
       </div>
       <div className={router.pathname === '/events' ? styles.activeEventLink : styles.eventLink}>
-        <Link href="/events">!! MTB Saisonauftakt 05.04.2025 !!</Link>
+        <Link href="/events">!! MTB Saisonauftakt 18. April 2026 !!</Link>
       </div>
       <nav className={styles.navbar}>
         <ul>

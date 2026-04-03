@@ -5,15 +5,15 @@ export default function Events() {
   return (
     <div className="container">
       <Head>
-        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2025</title>
+        <title>NaturFreunde Lichtenwald - MTB Saisonauftakt 2026</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
         <Navigation />
         <div>
-          <h1>MTB Saisonauftakt 2025</h1>
+          <h1>MTB Saisonauftakt am 18. April 2026</h1>
           <p>
-            Unser Mountainbike Saisonauftakt geht 2025 in die dritte Runde!<br/>
+            Unser Mountainbike Saisonauftakt geht 2026 in die vierte Runde!<br/>
             Direkt bei unserem wunderschön gelegenen NaturFreundehaus wollen wir mit euch den Start in die Saison feiern.<br/><br/>
             Auf dieser Seite erfahrt ihr alle notwendigen Infos und wir werden sie stets aktualisieren.<b/>
             Bei Fragen kontaktiert uns gerne über <a className="actionLink" href="mailto:trails@naturfreunde-lichtenwald.de">trails@naturfreunde-lichtenwald.de</a> oder schreibt uns auf den sozialen Medien an.
@@ -54,7 +54,7 @@ export default function Events() {
           </ul>
 
           <div>
-            <img className="flyer" src="/saisonauftakt2025.jpg" alt="MTB Saisonauftakt 2025 Flyer" />
+            <img className="flyer" src="/saisonauftakt2026.png" alt="MTB Saisonauftakt 2026 Flyer" />
           </div>
           <div>
             <h3>
